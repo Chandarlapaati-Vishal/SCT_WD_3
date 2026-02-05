@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Quiz Game Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="quiz-container">
+        <h1>Quiz Game</h1>
+
+        <div id="quiz-box">
+            <h2 id="question">Question comes here</h2>
+
+            <div class="options">
+                <button class="option" onclick="checkAnswer(0)">Option 1</button>
+                <button class="option" onclick="checkAnswer(1)">Option 2</button>
+                <button class="option" onclick="checkAnswer(2)">Option 3</button>
+                <button class="option" onclick="checkAnswer(3)">Option 4</button>
+            </div>
+
+            <p id="progress"></p>
+        </div>
+
+        <div id="result-box" class="hide">
+            <h2>Your Score</h2>
+            <p id="score"></p>
+            <button onclick="restartQuiz()">Restart Quiz</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
